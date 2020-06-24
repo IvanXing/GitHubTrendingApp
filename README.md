@@ -15,3 +15,16 @@
     "react-navigation-stack": "1.9.0",
     "react-navigation-tabs": "2.5.5"
 ```
+* 底部导航 
+```js
+  createAppContainer(
+    createSwitchNavigator(
+      createStackNavigator(Welcome), // 2s后跳Main
+      createStackNavigator(Main),
+    )
+  )
+  Main =>
+  createAppContainer(
+    createBottomTabNavigator(1, 2, 3, 4)
+  )
+```
