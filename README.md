@@ -38,3 +38,8 @@
   )
 ```
 * 抽离底部导航动态配置
+* 动态配置顶部导航
+```js
+// screen传递组件or传值进入
+screen: props => <PopularTab {...props} tabLabel={item} />,
+```
