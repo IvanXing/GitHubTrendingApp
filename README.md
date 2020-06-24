@@ -28,3 +28,12 @@
     createBottomTabNavigator(1, 2, 3, 4)
   )
 ```
+* 某页顶部导航
+```js
+  createAppContainer(
+    createMaterialTopTabNavigator(
+      popularTab1:{screen:x},
+      popularTab2:{screen:x},
+    )
+  )
+```
