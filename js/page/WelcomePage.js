@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import NavigationUtil from '../navigator/NavigationUtil';
 
 export default class WelcomePage extends Component {
   componentDidMount() {
     this.timer = setTimeout(() => {
       // 跳转到首页
+      NavigationUtil.resetToHomePage(this.props);
     }, 200);
   }
   componentWillMount() {
@@ -14,7 +16,7 @@ export default class WelcomePage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>WelcomePage</Text>
+        <Text>Welcome欢迎Page</Text>
       </View>
     );
   }
