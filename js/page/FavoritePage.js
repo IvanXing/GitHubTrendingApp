@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
+import NavigationUtil from '../navigator/NavigationUtil';
 
 export default class FavoritePage extends Component {
   render() {
+    const {navigation} = this.props;
+    console.log('navigation=>', navigation);
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>FavoritePage </Text>
+        <Button
+          title={'跳转详情页'}
+          onPress={() => {
+            NavigationUtil.goPage({}, 'DetailPage');
+          }}
+        />
       </View>
     );
   }

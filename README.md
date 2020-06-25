@@ -38,6 +38,12 @@
   )
 ```
 * 抽离底部导航动态配置
+  * DynamicTabNavigator中的页面无法跳转到外层导航器页面的问题
+  * 动态导航是被react.component包裹的，不是导航包裹，需要赋值
+  ```js
+   NavigationUtil.navigation = this.props.navigation;
+   return <DynamicTabNavigator />;
+  ```
 * 动态配置顶部导航
 ```js
 // screen传递组件or传值进入
