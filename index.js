@@ -3,9 +3,12 @@
  */
 
 import {AppRegistry} from 'react-native';
-// import App from './App';
 import {name as appName} from './app.json';
+// 欢迎页
 // import WelcomePage from './js/page/WelcomePage';
-import AppNavigators from './js/navigator/AppNavigators';
+// 导航页
+// import AppNavigators from './js/navigator/AppNavigators';
+// true入口页
+import App from './js/App';
 
-AppRegistry.registerComponent(appName, () => AppNavigators);
+AppRegistry.registerComponent(appName, () => App);

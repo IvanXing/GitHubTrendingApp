@@ -49,3 +49,11 @@
 // screen传递组件or传值进入
 screen: props => <PopularTab {...props} tabLabel={item} />,
 ```
+
+### 2.集成Redux
+```js
+yarn add redux
+yarn add react-redux
+yarn add redux-thunk
+```
+* 创建一个合法的reducer => 创建一个store => store传递给app
